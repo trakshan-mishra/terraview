@@ -1,17 +1,10 @@
-.env
-server/.env
-.env
-server/.env
-.env
-.env
-.env
+# Environment variables
 .env
 client/.env
 server/.env
+
+# Dependencies
 **/node_modules
-client/dist
-.env
-client/.env
-server/.env
-**/node_modules
+
+# Build outputs
 client/dist

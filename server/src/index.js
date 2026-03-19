@@ -362,5 +362,8 @@ app.get('/health', (_, res) => res.json({ status: 'ok', users: users.size, navig
 httpServer.listen(PORT, () => {
   console.log(`\n  ✓ TerraView v2 server → http://localhost:${PORT}`);
   console.log(`  ✓ WebSocket ready`);
-  console.log(`  ✓ OpenRouter: ${process.env.OPENROUTER_API_KEY ? 'configured ✓' : 'MISSING ✗'}\n`);
+  if (!process.env.OPENROUTER_API_KEY) {
+    console.warn(`⚠️  OPENROUTER_API_KEY not configured. AI features will be unavailable.`);
+  }
+  console.log('');
 });
