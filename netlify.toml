@@ -1,4 +1,4 @@
 [build]
 command = "cd client && npm run build"
 publish = "client/dist"
-environment = { NODE_ENV = "production", SECRETS_SCAN_OMIT_KEYS = "PORT" }
+environment = { NODE_ENV = "", SECRETS_SCAN_OMIT_KEYS = "PORT" }
