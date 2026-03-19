@@ -5,3 +5,8 @@ server/.env
 .env
 .env
 .env
+.env
+client/.env
+server/.env
+**/node_modules
+client/dist
